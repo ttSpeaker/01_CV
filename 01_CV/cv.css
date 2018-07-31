@@ -1,0 +1,260 @@
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #d6d6d6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+@font-face {
+  font-family: HKGroteskRegular;
+  src: url(fonts/hkgrotesk-regular-webfont.woff);
+}
+@font-face {
+  font-family: HKGroteskSemiBold;
+  src: url(fonts/hkgrotesk-semibold-webfont.woff);
+}
+@font-face {
+  font-family: HKGroteskBold;
+  src: url(fonts/hkgrotesk-bold-webfont.woff);
+}
+
+body{
+  font-family: HKGroteskRegular,'Montserrat', sans-serif;
+  display: grid;
+  color: #333;
+  max-width: 100vw;
+  grid-template-columns: 20fr 80fr;
+  font-size: 199px;
+  margin: 0px;
+}
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  position: static;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+h1.textoLogo {
+  margin: 0px;
+  padding: 0px;
+  font-family: HKGroteskBold,'Montserrat', sans-serif;
+  font-size: 90px;
+  color: #ddd;
+  white-space: nowrap;
+  padding-left: 20px;
+}
+
+h1.textologo::before{
+  font-family: HKGroteskBold,'Montserrat', sans-serif;
+  content: attr(data-heading);
+  position: absolute;
+  color: #333;
+  overflow: hidden;
+  animation-name: logoshow;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  /*background-color: pink;*/
+}
+@keyframes logoshow {
+  0% {
+    width: 0%;
+  }
+  70% {
+    width: 70%;
+    text-shadow: 0px 0px 5px grey;
+  }
+  100%{
+    text-shadow: 3px 4px 5px grey;
+  }
+}
+.subtitulo {
+  opacity: 0;
+  animation-name: delay-logo;
+  animation-duration: 1.3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.nombre {
+  font-size: 18px;
+  font-family: HKGroteskBold,'Montserrat', sans-serif;
+  text-align: center;
+}
+.Arquitectura {
+  font-size: 16px;
+  font-family: HKGroteskRegular,'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0px 0px 25px 0px;
+}
+.contacto {
+  font-size: 14px;
+  font-family: HKGroteskRegular,'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0px 0px 5px 0px;
+}
+@keyframes delay-logo{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+.informacionPersonal {
+  padding-right: 0px;
+  grid-column: 1 2;
+  background-color: #ddd;
+  margin: 0px;
+}
+.navbar{
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+}
+.navegacion {
+  background-color: #ddd;
+  margin: 5px 0px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: grey;
+}
+.navegacion li, .contacto li{
+  list-style-type: none;
+}
+.navegacion a{
+  width: 100%;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: grey;
+}
+.navegacion a.active {
+  background-color: #333;
+  color: #ddd;
+}
+.navegacion a:hover  {
+  background-color: #333;
+  color: #ddd;
+}
+
+.division {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #333;
+  margin:  0px;
+  padding: 0px;
+}
+.foto {
+  filter: grayscale(100);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.contenidosCV {
+  margin: 0px;
+  padding: 15px 20px;
+  grid-column: 2 3;
+}
+#ExperienciaProfesional, #Educacion, #Habilidades, #Portfolio {
+  padding: 10px 15px 10px 15px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.tituloSeccion{
+  font-family: HKGroteskBold;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 5px
+}
+h4 {
+  font-size: 17px;
+  font-family: HKGroteskSemiBold
+}
+.puesto {
+  font-family: HKGroteskSemiBold;
+  font-size: 14px;
+}
+.categ {
+  font-family: HKGroteskSemiBold;
+  font-size: 14px;
+  margin-left: 12px;
+  margin-bottom: 0px;
+}
+.informacionFechas{
+  font-family: HKGroteskSemiBold;
+  font-size: 14px;
+  color: grey;
+  display: inline;
+}
+.descripcion {
+  font-family: HKGroteskRegular;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+/*
+#Portfolio ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#Portfolio li {
+  padding: 0px;
+  border-style: dashed;
+  width: 280px;
+  height: auto;
+  margin: 0px 10px;
+  border-style: solid;
+}
+*/
+
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+.proyectos div {
+  width: 320px;
+  margin: 10px;
+
+}
+.proyectos img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+img:hover {
+    opacity: 1.0;
+  }
