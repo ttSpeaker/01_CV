@@ -10,24 +10,27 @@
     <!-- barra informacion lateral -->
     <div class="informacionPersonal">
       <div class="navbar">
-      <div class="logo">
-        <h1 class="textoLogo" data-heading="S.">S.</h1>
-      </div>
-      <div class="subtitulo">
-        <h2 class="nombre"> SALVADOR SERRUYA</h2>
-        <h2 class="Arquitectura">ARQUITECTURA</h2>
-
-        <div class="navegacion">
-          <ul>
-            <li><a class=""  href="#ExperienciaProfesional">Experiencia profesional</a></li>
-            <li><a href="#Educacion">Educación</a></li>
-            <li><a href="#Habilidades">Habilidades</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-          </ul>
+        <div class="logo">
+          <h1 class="textoLogo" data-heading="S.">S.</h1>
         </div>
+        <div class="subtitulo">
+          <h2 class="nombre"> SALVADOR SERRUYA</h2>
+          <h2 class="Arquitectura">ARQUITECTURA</h2>
 
-        <img class="foto" src="foto perfil.jpg" alt="Foto retrato">
-      </div>
+          <div class="navegacion">
+            <ul>
+              <li><a class=""  href="#ExperienciaProfesional">Experiencia profesional</a></li>
+              <li><a href="#Educacion">Educación</a></li>
+              <li><a href="#Habilidades">Habilidades</a></li>
+              <li><a href="#Portfolio">Portfolio</a></li>
+              <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+          </div>
+            <div class="containerFoto">
+              <img class="foto" src="foto perfil.jpg" alt="Foto retrato">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -35,7 +38,7 @@
       <!-- h3 titulo seccion
            h4 subclase aclarcion fechas o algo en gris
            p  contenido general-->
-    <div class="contenidosCV subtitulo">
+    <div class="contenidosCV">
       <div id="ExperienciaProfesional">
         <h3 class="tituloSeccion">Experiencia profesional</h3>
         <div class="division"></div>
@@ -65,7 +68,32 @@
         <h4>Muarq // Arquitectura e interiorismo</h4>
         <p class="informacionFechas">2015/2017</p>
         <p class="puesto">Arquitecto proyectista</p>
-        <p class="categ"></p>
+        <p class="categ">Desarrollo de diseño</p>
+        <p class="descripcion">Diseño en conjunto con el director de diseño desde 		las ideas iniciales
+          hasta desarrollo y resolución de muebles y equipamiento a medida</p>
+        <p class="categ">3D Renderizado y visualización de proyectos</p>
+        <p class="descripcion">Realizado de imágenes fotorrealistas para proyectos del estudio y de clientes
+          externos internacionales</p>
+        <p class="categ">Documentación ejecutiva / de obra</p>
+        <p class="descripcion">Desarrollo de documentación completa para
+        	ejecución de arquitectura, instalaciones  y
+        	equipamientos a medida</p>
+        <p class="categ">Principales proyectos</p>
+        <ul class="descripcion">
+          <li>Oficinas: CRAFT, SOUTH CARGO</li>
+          <li>Edificio residencial</li>
+          <li>Interiores residenciales</li>
+        </ul>
+        <h4>POP ARQ - Galpón estudio</h4>
+        <p class="informacionFechas">2015</p>
+        <p class="puesto">Pasantia</p>
+        <p class="categ">Proyectista y renderista</p>
+
+        <h4>Freelance</h4>
+        <p class="informacionFechas">2015- presente</p>
+        <p class="puesto">Renderizado 3D y visualización de proyectos</p>
+        <p class="descripcion">Realizado de imágenes estáticas fotorrealistas e imágenes 360º</p>
+
       </div>
 
       <div id="Educacion">
@@ -73,7 +101,13 @@
         <div class="division"></div>
         <h4>FADU-UBA Facultad de Arquitectura y Urbanismo</h4>
         <p class="puesto">Arquitecura</p>
-        <p class="informacionFechas">Graduación estimada Feb/2019</p>
+        <p class="informacionFechas">Graduación estimada Feb/2019. Buenos Aires, Argentina</p>
+        <h4>Full stack Web Development // ACAMICA</h4>
+        <p class="puesto">Desarrollo full stack</p>
+        <p class="informacionFechas">cursando actualmente, termina en 2019. Buenos Aires, Argentina</p>
+        <h4>Taller Virtual en RED ARQUISUR - FADU -UBA</h4>
+        <p class="puesto">Proyecto arquitectónico colaborativo con alumnos de facultades en el extranjero</p>
+        <p class="informacionFechas">Buenos Aires, Argentina</p>
         <h4>Colégio Miguel de Cervantes</h4>
         <p class="puesto">Bachiller bilingüe</p>
         <p class="informacionFechas">2007, Sao Paulo, Brasil</p>
@@ -121,7 +155,7 @@
                 -->
       <div id="Portfolio">
         <h4>Portfolio</h4>
-
+        <h4 class="gris"><a href="http://salvadorserruya.com/SALVADOR%20SERRUYA%20PORTFOLIO%202018.pdf" target="_blank">Descargar pdf completo</a></h4>
         <div class="proyectos">
           <div><img class="proyecto" src="fotosPortfolio\PS final.jpg" alt="Proyecto 1"></div>
           <div><img class="proyecto" src="fotosPortfolio\02.jpg" alt="Proyecto 2"></div>
@@ -130,17 +164,33 @@
           <div><img class="proyecto" src="fotosPortfolio\nieve.jpg" alt="Proyecto 5"></div>
           <div><img class="proyecto" src="fotosPortfolio\LIVING OK.jpg" alt="Proyecto 6"></div>
         </div>
-      </div>
-      <div class="contacto">
-        <h3>Información de contacto</h3>
-        <div class="division"></div>
-        <ul>
-          <li><a href="http://salvadorserruya.com/" target="_blank">www.salvadorserruya.com/</a></li>
-          <li>js.serruya@gmail.com</li>
-          <li>+54 911 6896-0011</li>
-          <li>etc.</li>
-        </ul>
-      </div>
+        </div>
+        <div id="Contacto">
+          <h3>Información de contacto</h3>
+          <div class="division"></div>
+          <div class="datosContacto">
+            <ul>
+              <li><a href="http://salvadorserruya.com/" target="_blank">www.salvadorserruya.com/</a></li>
+              <li>js.serruya@gmail.com</li>
+              <li>+54 911 6896-0011</li>
+              <li>etc.</li>
+            </ul>
+          </div>
+          <div class="formularioContacto">
+            <form action="#">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="fname" name="nombre" placeholder="Nombre">
+
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Empresa">
+
+              <label for="mensaje">Mensaje</label>
+              <textarea id="subject" name="subject" placeholder="Mensaje..." style="height:200px"></textarea>
+              <input type="submit" value="Enviar">
+
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </body>
